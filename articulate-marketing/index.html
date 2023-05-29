@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raquel Illerias">
+    <meta name="description" content="Articulate Marketing assessment">
+    <meta name="robots" content="noindex"/>
+    <link rel="shortcut icon" href="./Assets/Assets/Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+    <title>Raquel Illerias | Developer Assignment</title>
+</head>
+
+<body class="body">
+    <header class="body__header">
+        <h1 class="body__h1">Products</h1>
+    </header>
+
+    <!-- FUZZY SEARCH FORM -->
+    <main class="body__main">
+        <div class="body__div-formsWrapper">
+            <form class="body__form-fuzzySearchWrapper">
+                <fieldset class="body__fieldset-fuzzySearch">
+                    <label class="body__label-fuzzySearch" for="filter">Filter by name</label>
+                    <input class="body__input-fuzzySearch" id="filter" type="text" name="filter" placeholder="Start typing to filter"
+                        maxlength="60" aria-label="Filter by name">
+                </fieldset>
+            </form>
+
+    <!-- SORT BY FORM -->
+            <form class="body__form-sortByWrapper">
+                <fieldset class="body__fieldset-sortBy">
+                    <p class="body__p-sortBy">Sort</p>
+                    <div class="body__div-sortByButtonsWrapper">
+                        <button class="body__button-sortByName" type="button" tabindex="0" aria-label="Sort by name">
+                            Name
+                            <svg id="arrowName" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
+                                <path d="m283-345-43-43 240-240 240 239-43 43-197-197-197 198Z" />
+                            </svg>
+                        </button>
+                        <button class="body__button-sortByPrice disabled" type="button" tabindex="0" aria-label="Sort by price">
+                            Price
+                            <svg id="arrowPrice" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
+                                <path d="m283-345-43-43 240-240 240 239-43 43-197-197-197 198Z" />
+                            </svg>
+                        </button>
+                    </div>            
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- PRODUCTS SECTION -->
+        <section class="body__section-productsWrapper">
+            <h2 class="body__h2" >Sorted by <span class="body__h2-span">name (ascending)</span></h2>
+            <div class="body__div-productsWrapper" aria-live="polite"></div>
+            <div class="body__div-singleProductWrapper">
+                <figure class="body__figure hidden">
+                    <div class="body__div-imageWrapper">
+                        <img class="body__img" src="./Assets/Assets/Images/rectn-1.webp" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
+                            <path d="m248-246-42-42 412-412H240v-60h480v480h-60v-378L248-246Z" />
+                        </svg>
+                    </div>
+                    <figcaption class="body__figcaption">
+                        <ul class="body__ul">
+                            <li class="body__li-itemName"></li>
+                            <li class="body__li-itemPrice"></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
